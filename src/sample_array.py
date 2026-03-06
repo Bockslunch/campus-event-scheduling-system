@@ -1,4 +1,4 @@
-import event_creator
+from event_creator import Event
 # SIMPLE ARRAY OF CUSTOM MADE EVENTS TO USE FOR TESTING
 
 brunch = Event(0, "Brunch Buddies", "2026-03-06", "09:00", "C4C")
