@@ -1,7 +1,7 @@
 # SORTING ALGORITHMS: INSERTION, MERGE, QUICK
 
 # INSERTION SORT FOR ARRAY IMPLEMENTATION
-def insertSort_Arr(myArray):
+def insertSort(myArray):
     n = len(myArray)         # ASSIGN n AS len(myArray) FOR EASE OF USE
   
     # ITERATES THROUGH WHOLE LIST STARTING AT IDX 1, SINCE IDX 0 SORTED
@@ -57,7 +57,7 @@ def mergeSort(myArray):
     return s                            # RETURN SORTED LIST
 
 # QUICKSORT FOR ARRAY IMPLEMENTATION
-def quickSortStarted(myArray):
+def quickSort(myArray):
     n = len(myArray)                  # ASSIGN n AS len(myArray) FOR EASE OF USE
     if n <= 1:                          # BASE CASE RETURNS myArray
         return myArray
@@ -73,8 +73,8 @@ def quickSortStarted(myArray):
                 equal.append(myArray[i]) #IF myArray[i] = pivot, APPEND TO equal
             else:
                 more.append(myArray[i])  # IF myArray[i] > pivot, APPEND TO more
-        sortLess = quickSortStarted(less) # RECURSIVE CALL TO SORT less
-        sortMore = quickSortStarted(more) # RECURSIVE CALL TO SORT more
+        sortLess = quickSort(less) # RECURSIVE CALL TO SORT less
+        sortMore = quickSort(more) # RECURSIVE CALL TO SORT more
 
     s = sortLess + equal + sortMore    # CONCATENATE THREE (3) SUBLISTS TOGETHER
     return s
