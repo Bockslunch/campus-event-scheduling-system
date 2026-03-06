@@ -7,8 +7,17 @@ class Node:
 class EventLinkedList(self):
   self.head = None
 
+# Insert to linked list
 class Insert(self, event):
+  newEvent = Node(event)
+  temp = head
   
+  if event == None:
+    newEvent = self.head
+  else:
+    while temp.next:
+      temp = temp.next
+    temp.next = newEvent
 
 ### Store events (call event-creator.py)
 
