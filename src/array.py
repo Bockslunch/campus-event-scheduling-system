@@ -1,4 +1,4 @@
-### array implementation of campus event scheduling system
+### ARRAY IMPLEMENTATION OF SCHEDULING SYSTERM
 
 ### Store events (call event-creator.py)
 
